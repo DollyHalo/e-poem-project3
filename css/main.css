@@ -2,10 +2,141 @@
 
 .star-group img {
     width: 40px;
+    transition: all 2s ease
+
+
 }
+
+.star-group {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+
+
 
 .star-1 {
     position: absolute;
     top: 0;
     left: 110px;
+}
+
+.star-group:hover .star-1 {transform: translateY(1000px)
+}
+
+.star-2 {
+    position: absolute;
+    top: 10;
+    left: 210px;
+
+}
+
+.star-3 {
+    position: absolute;
+    top: 100px;
+    left: 310px;
+    transform: rotate(45 degree);
+}
+
+.star-4 {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    transform: scale(2);
+}
+
+.star-4 img:hover {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    transform: translate(300px, 50px) scale(5);
+}
+
+.star-5 {
+    position: absolute;
+    top: 75px;
+    left: 510px;
+}
+
+.snoopy-wrapper {
+    border: 1px solid black;
+
+}
+
+.snoopy-wrapper img {
+    transform: translate(300px, 50px) scale(-1);
+    transition:  all 1s ease-in;
+    width: 100px;
+
+}
+
+.snoopy-wrapper:hover img {
+    transform: translate(300px, 50px) scale(1);
+}
+
+
+@keyframes bounce {
+
+    0% { transform: translateY(0);
+
+    }
+    50% { transform: translateY(-50px);
+
+    }
+    100% { transform: translateY(0);
+
+    }
+}
+
+@keyfrmes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opcity: 1;
+    }
+
+}
+
+
+@keyfrmes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opcity: 1;
+    }
+}
+
+.fade-in { 
+    animation: fadeIN 2s ease;
+}
+
+.fade-out {
+    animation:  fadeOut 5s ease forwards;
+}
+
+
+.fade-in-out { 
+    animation: fadeIN 2s ease;
+}
+
+.intro {
+    animation: fadeIN 2s ease;
+    position: absolute
+    top; 0;
+    left: o;
+    bottom: 0;
+    background-color: #f0f8ff
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.animated-element {
+    animation: bounce 1s infinite;
 }

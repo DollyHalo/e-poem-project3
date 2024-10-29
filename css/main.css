@@ -10,12 +10,84 @@ body {
   }
 
 
-
+  .grow-hang {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    transform-origin: center top; /* Adjust origin to avoid moving off page */
+    animation: growInHang 2s ease forwards;
+  }
+  
+  /* Define the keyframes */
+  @keyframes growInHang {
+    0% {
+      transform: scale(0); /* Start from zero size */
+      opacity: 0; /* Start fully transparent */
+    }
+    50% {
+      transform: scale(1.2); /* Grow slightly larger than final size */
+      opacity: 1; /* Fully visible */
+    }
+    80% {
+      transform: scale(1); /* Scale back to normal size */
+    }
+    100% {
+      transform: scale(1); /* Hang at full size */
+    }
+  }
+  
 
   .ghost {
     width: 100%;
     overflow: hidden; /* Keeps image from overflowing out of the screen */
+    
   }
+
+  
+  /* Image styling and animation */
+  .moving-fading-image {
+    position: relative;
+    width: 400px; /* Set desired width */
+    animation: move-fade 5s linear infinite alternate;
+  }
+  
+  /* Keyframes for more frequent fading */
+  @keyframes move-fade {
+    0% {
+      left: 0;
+      opacity: 0; /* Start fully transparent */
+    }
+    10% {
+      opacity: 1; /* Fade in */
+    }
+    20% {
+      opacity: 0; /* Fade out */
+    }
+    30% {
+      opacity: 1; /* Fade in again */
+    }
+    40% {
+      opacity: 0; /* Fade out */
+    }
+    50% {
+      opacity: 1; /* Fade in (midway point) */
+    }
+    60% {
+      opacity: 0; /* Fade out */
+    }
+    70% {
+      opacity: 1; /* Fade in */
+    }
+    80% {
+      opacity: 0; /* Fade out */
+    }
+    90% {
+      opacity: 1; /* Fade in */
+    }
+    100% {
+      left: 100%;
+      opacity: 0; /* End fully transparent */
+    }
+  }
+  
   
   /* Style the image and set initial position */
   .moving-image {

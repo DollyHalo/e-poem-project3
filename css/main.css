@@ -1,5 +1,14 @@
 /* Place CSS styles here */
 
+
+body {
+    background-image: url('https://wallpapers.com/images/hd/scary-halloween-graveyard-xikg0qzr03w1oigy.jpg')
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
 .star-group img {
     width: 40px;
     transition: all 2s ease

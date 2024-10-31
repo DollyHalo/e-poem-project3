@@ -33,12 +33,34 @@ body {
     top: 284px;         
     right: 34px;          /* Align to the right */
     width: 400px;      /* Set your desired width */
+      opacity: 1;      /* Start invisible */
+    transition: opacity 3s ease; /* Smooth fade-in effect */
   }
 
   .bloody-handprint img {
     width: 100%;       /* Ensures the image fills the container */
     height: auto;      /* Maintains aspect ratio */
     
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Apply the animation to the handprint */
+.bloody-handprint {
+    position: absolute;
+    bottom: 50px;         /* Adjust position as needed */
+    right: 0;
+    width: 300px;         /* Width of the handprint */
+    opacity: 0;           /* Start hidden */
+    animation: fadeIn 3s ease forwards; /* 3s fade-in effect */
 }
 
 
@@ -247,7 +269,7 @@ bottom: 0;
     left: 400px;
 }
 
-.star-group:hover .star-6 {transform: translateY(1000px)
+.star-group2:hover .star-6 {transform: translateY(1000px)
 }
 
 .star-7 {
@@ -257,7 +279,7 @@ bottom: 0;
 
 }
 
-.star-group:hover .star-7 {transform: translateY(1000px)
+.star-group2:hover .star-7 {transform: translateY(1000px)
 }
 
 .star-8 {
@@ -267,7 +289,7 @@ bottom: 0;
     transform: rotate(45 degree);
 }
 
-.star-group:hover .star-8 {transform: translateY(1000px)
+.star-group2:hover .star-8 {transform: translateY(1000px)
 }
 
 .star-9 {
@@ -277,7 +299,7 @@ bottom: 0;
     transform: scale(2);
 }
 
-.star-group:hover .star-9 {transform: translateY(1000px)
+.star-group2:hover .star-9 {transform: translateY(1000px)
 }
 
 .star-9 img:hover {
@@ -293,7 +315,7 @@ bottom: 0;
     left: 910px;
 }
 
-.star-group:hover .star-10 {transform: translateY(1000px)
+.star-group2:hover .star-10 {transform: translateY(1000px)
 }
 
 
@@ -306,24 +328,25 @@ bottom: 0;
 
 
 
+/*--------------snoopy-wrapper--------------*/
 
 
-
-.snoopy-wrapper {
-    border: 1px solid black;
-
-}
 
 .snoopy-wrapper img {
-    transform: translate(300px, 50px) scale(-1);
+    transform: translate(300px, 50px) scale(1);
     transition:  all 1s ease-in;
     width: 100px;
 
 }
 
 .snoopy-wrapper:hover img {
-    transform: translate(300px, 50px) scale(1);
+    transform: translate(300px, 50px) scale(-1);
 }
+
+
+
+
+/*---Booo Bounnce text---*/
 
 
 @keyframes bounce {
@@ -338,52 +361,6 @@ bottom: 0;
 
     }
 }
-
-@keyfrmes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opcity: 1;
-    }
-
-}
-
-
-@keyfrmes fadeOut {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opcity: 1;
-    }
-}
-
-.fade-in { 
-    animation: fadeIN 2s ease;
-}
-
-.fade-out {
-    animation:  fadeOut 5s ease forwards;
-}
-
-
-.fade-in-out { 
-    animation: fadeIN 2s ease;
-}
-
-.intro {
-    animation: fadeIN 2s ease;
-    position: absolute
-    top; 0;
-    left: o;
-    bottom: 0;
-    background-color: #f0f8ff
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 
 .animated-element {

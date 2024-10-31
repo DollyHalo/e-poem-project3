@@ -167,8 +167,9 @@ bottom: 0;
 
 .star-1 {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 110px;
+    transform: scale(1.5);
 }
 
 .star-group:hover .star-1 {transform: translateY(1000px)
@@ -206,19 +207,107 @@ bottom: 0;
 
 .star-4 img:hover {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 410px;
     transform: translate(300px, 50px) scale(5);
 }
 
 .star-5 {
     position: absolute;
-    top: 75px;
+    top: 110px;
     left: 510px;
 }
 
 .star-group:hover .star-5 {transform: translateY(1000px)
 }
+
+
+/* ---2nd star group--*/
+
+.star-group2 img {
+    width: 40px;
+    transition: all 2s ease
+
+
+}
+
+.star-group2 {
+position: absolute;
+top: 0;
+left: 200px;
+right: 0;
+bottom: 0;
+}
+
+
+
+.star-6 {
+    position: absolute;
+    top: 141px;
+    left: 400px;
+}
+
+.star-group:hover .star-6 {transform: translateY(1000px)
+}
+
+.star-7 {
+    position: absolute;
+    top: 10;
+    left: 500px;
+
+}
+
+.star-group:hover .star-7 {transform: translateY(1000px)
+}
+
+.star-8 {
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    transform: rotate(45 degree);
+}
+
+.star-group:hover .star-8 {transform: translateY(1000px)
+}
+
+.star-9 {
+    position: absolute;
+    top: 8px;
+    left: 810px;
+    transform: scale(2);
+}
+
+.star-group:hover .star-9 {transform: translateY(1000px)
+}
+
+.star-9 img:hover {
+    position: absolute;
+    top: 0;
+    left: 810px;
+    transform: translate(300px, 50px) scale(5);
+}
+
+.star-10 {
+    position: absolute;
+    top: 75px;
+    left: 910px;
+}
+
+.star-group:hover .star-10 {transform: translateY(1000px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .snoopy-wrapper {
     border: 1px solid black;

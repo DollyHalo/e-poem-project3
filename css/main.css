@@ -1,17 +1,51 @@
 /* Place CSS styles here */
 
+@font-face {
+    font-family: 'rubik wet paint'; /* Name for the font */
+    src: url('fonts/fonts/RubikWetPaint-Regular.ttf') format('truetype'); /* Path to your font file */
+    /* Add additional formats as needed */
+}
+
+.rubik-wet-paint-regular {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
-    background-image: url('https://wallpapers.com/images/hd/scary-halloween-graveyard-xikg0qzr03w1oigy.jpg')
+    font-family: 'CustomFont', sans-serif; /* Apply the custom font */
+}
+  
+
+
+body {
+    background-image: url('https://wallpapers.com/images/hd/scary-halloween-graveyard-xikg0qzr03w1oigy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    color: rgb(246, 5, 5);
   }
+
+  .bloody-handprint {
+    position: absolute; /* Enable absolute positioning */
+    top: 284px;         
+    right: 34px;          /* Align to the right */
+    width: 400px;      /* Set your desired width */
+  }
+
+  .bloody-handprint img {
+    width: 100%;       /* Ensures the image fills the container */
+    height: auto;      /* Maintains aspect ratio */
+    
+}
+
+
 
 
   .grow-hang {
-    font-size: 2.5rem; /* Adjust font size as needed */
+    font-size: 3.8rem; /* Adjust font size as needed */
     transform-origin: center top; /* Adjust origin to avoid moving off page */
     animation: growInHang 2s ease forwards;
   }
@@ -107,6 +141,11 @@ body {
   }
 
 
+
+
+
+
+
 .star-group img {
     width: 40px;
     transition: all 2s ease
@@ -140,6 +179,9 @@ bottom: 0;
 
 }
 
+.star-group:hover .star-2 {transform: translateY(1000px)
+}
+
 .star-3 {
     position: absolute;
     top: 100px;
@@ -147,11 +189,17 @@ bottom: 0;
     transform: rotate(45 degree);
 }
 
+.star-group:hover .star-3 {transform: translateY(1000px)
+}
+
 .star-4 {
     position: absolute;
     top: 0;
     left: 410px;
     transform: scale(2);
+}
+
+.star-group:hover .star-4 {transform: translateY(1000px)
 }
 
 .star-4 img:hover {
@@ -165,6 +213,9 @@ bottom: 0;
     position: absolute;
     top: 75px;
     left: 510px;
+}
+
+.star-group:hover .star-5 {transform: translateY(1000px)
 }
 
 .snoopy-wrapper {
@@ -247,3 +298,8 @@ bottom: 0;
 .animated-element {
     animation: bounce 1s infinite;
 }
+
+
+
+
+/*----*/

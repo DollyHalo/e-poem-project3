@@ -45,6 +45,8 @@ body {
 
 
   .grow-hang {
+    text-align: center;
+    margin-left: 50px;
     font-size: 3.8rem; /* Adjust font size as needed */
     transform-origin: center top; /* Adjust origin to avoid moving off page */
     animation: growInHang 2s ease forwards;
